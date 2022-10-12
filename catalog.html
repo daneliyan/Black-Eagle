@@ -25,13 +25,17 @@
 		<a href="index.html" class="logo">
 			<img src="img/logo.jpg" alt="Логотип Black Eagle">
 		</a>
-		<nav class="nav">
+		<nav class="nav" data-menu>
 			<ul class="nav__list">
-				<li class="nav__item"><a href="catalog.html" class="nav__link">Каталог</a></li>
-				<li class="nav__item"><a href="pokupatelyam.html" class="nav__link">Покупателям</a></li>
-				<li class="nav__item"><a href="#" class="nav__link">Обувь</a></li>
-				<li class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+				<li class="nav__item" data-menu-item><a href="catalog.html" class="nav__link">Каталог</a></li>
+				<li class="nav__item" data-menu-item><a href="pokupatelyam.html" class="nav__link">Покупателям</a></li>
+				<li class="nav__item" data-menu-item><a href="#" class="nav__link">Обувь</a></li>
+				<li class="nav__item" data-menu-item><a href="contacts.html" class="nav__link">Контакты</a></li>
 			</ul>
+			<div class="social">
+				<a href="#" class="social__link"><i class="icons _icon-instagram"></i></a>
+				<a href="#" class="social__link"><i class="icons _icon-whatsapp"></i></a>
+			</div>
 		</nav>
 		<div class="header__right">
 			<div class="social">
@@ -44,6 +48,9 @@
 			</a>
 			<a href="login.html" class="login-btn">Вход</a>
 		</div>
+		<button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+			<span class="burger__line"></span>
+		</button>
 	</div>
 </header>
 
@@ -58,6 +65,97 @@
       <section class="catalog">
   <div class="container--fluid">
     <div class="catalog__heading">
+      <a href="#" class="back mob-filter-btn">Фильтры</a>
+      <div class="catalog__filter mob-catalog__filter">
+        <div class="catalog__filter-group">
+          <div class="catalog__filter-title">Цена</div>
+        </div>
+        <div class="catalog__filter-group">
+          <div class="catalog__filter-title">Тип</div>
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" id="checkbox">
+            <span>Головные уборы</span>
+          </label>
+          <label for="checkbox1" class="checkbox">
+            <input type="checkbox" id="checkbox1">
+            <span>Тапки</span>
+          </label>
+          <label for="checkbox2" class="checkbox">
+            <input type="checkbox" id="checkbox2">
+            <span>Футболки</span>
+          </label>
+          <label for="checkbox4" class="checkbox">
+            <input type="checkbox" id="checkbox4">
+            <span>Рубашки</span>
+          </label>
+          <label for="checkbox5" class="checkbox">
+            <input type="checkbox" id="checkbox5">
+            <span>Костюмы</span>
+          </label>
+          <label for="checkbox6" class="checkbox">
+            <input type="checkbox" id="checkbox6">
+            <span>Кроссовки</span>
+          </label>
+          <label for="checkbox7" class="checkbox">
+            <input type="checkbox" id="checkbox7">
+            <span>Акссесуары</span>
+          </label>
+          <label for="checkbox8" class="checkbox">
+            <input type="checkbox" id="checkbox8">
+            <span>Худи</span>
+          </label>
+          <label for="checkbox9" class="checkbox">
+            <input type="checkbox" id="checkbox9">
+            <span>Куртки</span>
+          </label>
+          <label for="checkbox10" class="checkbox">
+            <input type="checkbox" id="checkbox10">
+            <span>Джинсы</span>
+          </label>
+          <label for="checkbox11" class="checkbox">
+            <input type="checkbox" id="checkbox11">
+            <span>Обувь</span>
+          </label>
+        </div>
+        <div class="catalog__filter-group">
+          <div class="catalog__filter-title">Модель</div>
+        </div>
+        <div class="catalog__filter-group">
+          <div class="catalog__filter-title">Наличие</div>
+          <label for="checkbox12" class="checkbox">
+            <input type="checkbox" id="checkbox12">
+            <span>В наличии</span>
+          </label>
+          <label for="checkbox13" class="checkbox">
+            <input type="checkbox" id="checkbox13">
+            <span>Под заказ</span>
+          </label>
+        </div>
+        <div class="catalog__filter-group">
+          <div class="catalog__filter-title">Тип</div>
+          <label for="checkbox14" class="checkbox">
+            <input type="checkbox" id="checkbox14">
+            <span>Головные уборы</span>
+          </label>
+          <label for="checkbox15" class="checkbox">
+            <input type="checkbox" id="checkbox15">
+            <span>Тапки</span>
+          </label>
+          <label for="checkbox16" class="checkbox">
+            <input type="checkbox" id="checkbox16">
+            <span>Футболки</span>
+          </label>
+          <label for="checkbox17" class="checkbox">
+            <input type="checkbox" id="checkbox17">
+            <span>Рубашки</span>
+          </label>
+          <label for="checkbox18" class="checkbox">
+            <input type="checkbox" id="checkbox18">
+            <span>Костюмы</span>
+          </label>
+        </div>
+        <a href="#" class="border-btn">Применить</a>
+      </div>
       <h2>Все товары</h2>
       <div class="catalog__sort">
         <div class="catalog__sort-title">Порядок сортировки:</div>
